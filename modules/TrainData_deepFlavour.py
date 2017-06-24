@@ -731,27 +731,27 @@ class TrainData_image(TrainData_fullTruth):
         x_chmap = createDensityMap(filename,TupleMeanStd,
                                    'Cpfcan_ptrel',
                                    self.nsamples,
-                                   ['Cpfcan_eta','jet_eta',20,0.5],
-                                   ['Cpfcan_phi','jet_phi',20,0.5],
+                                   ['Cpfcan_eta','jet_eta',33,0.5],
+                                   ['Cpfcan_phi','jet_phi',33,0.5],
                                    'nCpfcand',-1)
         
         x_chcount = createCountMap(filename,TupleMeanStd,
                                    self.nsamples,
-                                   ['Cpfcan_eta','jet_eta',20,0.5],
-                                   ['Cpfcan_phi','jet_phi',20,0.5],
+                                   ['Cpfcan_eta','jet_eta',33,0.5],
+                                   ['Cpfcan_phi','jet_phi',33,0.5],
                                    'nCpfcand')
         
         x_neumap = createDensityMap(filename,TupleMeanStd,
                                    'Npfcan_ptrel',
                                    self.nsamples,
-                                   ['Npfcan_eta','jet_eta',20,0.5],
-                                   ['Npfcan_phi','jet_phi',20,0.5],
+                                   ['Npfcan_eta','jet_eta',33,0.5],
+                                   ['Npfcan_phi','jet_phi',33,0.5],
                                    'nNpfcand',-1)
         
         x_neucount = createCountMap(filename,TupleMeanStd,
                                    self.nsamples,
-                                   ['Npfcan_eta','jet_eta',20,0.5],
-                                   ['Npfcan_phi','jet_phi',20,0.5],
+                                   ['Npfcan_eta','jet_eta',33,0.5],
+                                   ['Npfcan_phi','jet_phi',33,0.5],
                                    'nNpfcand')
         
         
