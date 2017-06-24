@@ -910,18 +910,14 @@ class TrainData_image_plusDeltaR(TrainData_fullTruth):
 
         x_chmap = createDensity (filename,
                               inbranches=['Cpfcan_ptrel',
-                                          'Cpfcan_etarel',
-                                          'Cpfcan_phirel',
                                           'Cpfcan_deltaR'], 
                               modes=['sum',
-                                     'average',
-                                     'average',
                                      'average'],
                               nevents=self.nsamples,
                               dimension1=['Cpfcan_eta','jet_eta',20,0.5], 
                               dimension2=['Cpfcan_phi','jet_phi',20,0.5],
                               counterbranch='nCpfcand',
-                              offsets=[-1,-0.5,-0.5,-1])
+                              offsets=[-1,-1])
         
         x_chcount = createCountMap(filename,TupleMeanStd,
                                    self.nsamples,
@@ -939,18 +935,14 @@ class TrainData_image_plusDeltaR(TrainData_fullTruth):
 
         x_neumap = createDensity (filename,
                               inbranches=['Npfcan_ptrel',
-                                          'Npfcan_etarel',
-                                          'Npfcan_phirel',
                                           'Npfcan_deltaR'], 
                               modes=['sum',
-                                     'average',
-                                     'average',
                                      'average'],
                               nevents=self.nsamples,
                               dimension1=['Npfcan_eta','jet_eta',20,0.5], 
                               dimension2=['Npfcan_phi','jet_phi',20,0.5],
                               counterbranch='nNpfcand',
-                              offsets=[-1,-0.5,-0.5,-1])
+                              offsets=[-1,-1])
 
         x_neucount = createCountMap(filename,TupleMeanStd,
                               self.nsamples,
