@@ -48,7 +48,7 @@ shutil.copyfile('../modules/DeepJet_models.py',outputDir+'DeepJet_models.py')
 # configure the in/out/split etc
 config_args = { #we might want to move it to an external file
    'testrun'   : False,
-   'nepochs'   : 2,
+   'nepochs'   : 30,
    'batchsize' : 2000,
    'startlearnrate' : 0.0005,
    'useweights' : False,

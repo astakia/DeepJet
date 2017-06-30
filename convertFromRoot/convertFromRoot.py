@@ -49,7 +49,8 @@ def main(argv=None):
     from TrainData_deepCSV_PF_Reg import TrainData_deepCSV_PF_Reg
     from TrainData_deepJet_Reg import TrainData_deepJet_Reg, TrainData_PF_Reg
     from TrainData_deepCSV_PF_binned import TrainData_deepCSV_PF_Binned
-    from TrainData_deepFlavour import TrainData_deepFlavour_FT,TrainData_deepFlavour_FT_map,TrainData_deepFlavour_FT_map_reg,TrainData_image, TrainData_image_plusDeltaR
+    from TrainData_deepFlavour import TrainData_deepFlavour_FT,TrainData_deepFlavour_FT_map,TrainData_deepFlavour_FT_map_reg
+    from TrainData_deepFlavour import TrainData_image, TrainData_image_plusDeltaR, TrainData_image_validPadding
     from TrainData_FatJet import TrainData_FatJet_Test
     from TrainData_PT_recur import TrainData_PT_recur
     from TrainData_deepCSV_int import TrainData_deepCSV_int,TrainData_deepCSV_conv
@@ -70,6 +71,7 @@ def main(argv=None):
         TrainData_deepFlavour_FT_map,
         TrainData_image,
         TrainData_image_plusDeltaR,
+        TrainData_image_validPadding,
         TrainData_deepCSV_PF_rec,
         TrainData_PT_recur,
         TrainData_FatJet_Test,

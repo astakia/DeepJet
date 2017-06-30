@@ -62,7 +62,8 @@ class testDescriptor(object):
             
             td.readIn(fullpath)
             truthclasses=td.getUsedTruth()
-            regressionclasses=td.regressiontargetclasses
+#            regressionclasses=td.regressiontargetclasses
+            regressionclasses=[]
             
             formatstring=','.join(['prob_%s%s' % (i, ident) for i in truthclasses])
             features=td.x
